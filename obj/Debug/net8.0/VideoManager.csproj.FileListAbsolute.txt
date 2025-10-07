@@ -45,3 +45,4 @@ C:\Users\lenovo test\source\repos\artecSample\artecSample\obj\Debug\net8.0\refin
 C:\Users\lenovo test\source\repos\artecSample\artecSample\obj\Debug\net8.0\VideoManager.pdb
 C:\Users\lenovo test\source\repos\artecSample\artecSample\obj\Debug\net8.0\VideoManager.genruntimeconfig.cache
 C:\Users\lenovo test\source\repos\artecSample\artecSample\obj\Debug\net8.0\ref\VideoManager.dll
+C:\Users\lenovo test\source\repos\artecSample\artecSample\obj\Debug\net8.0\VideoManager.sourcelink.json
