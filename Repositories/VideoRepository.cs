@@ -19,7 +19,7 @@ namespace VideoManager.Repositories
             if (!string.IsNullOrWhiteSpace(search))
             {
                 var s = search.Trim().ToLower();
-                query = query.Where(v => v.Title.ToLower().Contains(s));
+                query = query.Where(v => v.Title.Contains(s, StringComparison.CurrentCultureIgnoreCase));
             }
 
             // Sorting
