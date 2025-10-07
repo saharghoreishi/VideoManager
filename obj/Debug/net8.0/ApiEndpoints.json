@@ -1,0 +1,30 @@
+[
+  {
+    "ContainingType": "VideoManager.Controllers.VideoController",
+    "Method": "GetAll",
+    "RelativePath": "Video",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "GetVideos"
+  },
+  {
+    "ContainingType": "VideoManager.Controllers.VideoController",
+    "Method": "Create",
+    "RelativePath": "Video",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "video",
+        "Type": "VideoManager.Models.Video",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "CreateVideos"
+  }
+]
