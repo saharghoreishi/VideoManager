@@ -53,8 +53,7 @@
     "schemas": {
       "Video": {
         "required": [
-          "title",
-          "url"
+          "title"
         ],
         "type": "object",
         "properties": {
