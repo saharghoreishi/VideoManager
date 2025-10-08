@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using VideoManager.Common;
-using VideoManager.Data;
-using VideoManager.Models;
+using VideoManager.Api.Common;
+using VideoManager.Api.Data;
+using VideoManager.Api.Models;
 
-namespace VideoManager.Repositories
+namespace VideoManager.Api.Repositories
 {
     public class VideoRepository(AppDbContext db) : IVideoRepository
     {
