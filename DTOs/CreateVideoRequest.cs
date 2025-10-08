@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace VideoManager.DTOs
+namespace VideoManager.Api.DTOs
 {
     public class CreateVideoRequest
     {

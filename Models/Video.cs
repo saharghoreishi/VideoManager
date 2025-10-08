@@ -1,12 +1,16 @@
-namespace VideoManager.Models
+using System.ComponentModel.DataAnnotations;
+
+namespace VideoManager.Api.Models
 {
     public class Video
     {
-        public int Id{ get; set; }
+        public int Id { get; set; }
 
-        public required string Title { get; set; }
+        [Required, MaxLength(200)]
+        public string Title { get; set; } = string.Empty;
 
-        public  string? Url { get; set; }
+        [Required, Url, MaxLength(500)]
+        public string Url { get; set; } = string.Empty;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }

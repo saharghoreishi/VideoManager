@@ -1,7 +1,7 @@
-﻿using VideoManager.Common;
-using VideoManager.Models;
+﻿using VideoManager.Api.Common;
+using VideoManager.Api.Models;
 
-namespace VideoManager.Repositories
+namespace VideoManager.Api.Repositories
 {
     public interface IVideoRepository
     {
