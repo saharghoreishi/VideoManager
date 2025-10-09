@@ -1,20 +1,67 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using VideoManager.Api.Auth;
 using VideoManager.Api.Data;
+using VideoManager.Api.Helpers;
 using VideoManager.Api.Repositories;
 using VideoManager.Api.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Controllers + Swagger
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Enter JWT token"
+    });
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme {
+                Reference = new OpenApiReference {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "VideoManager API", Version = "v1" });
+
+    var bearerScheme = new OpenApiSecurityScheme
+    {
+        Description = "Please insert the token",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        Reference = new OpenApiReference
+        {
+            Type = ReferenceType.SecurityScheme,
+            Id = "Bearer"
+        }
+    };
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        { bearerScheme, Array.Empty<string>() }
+    });
+});
 
 // In-Memory Database
 builder.Services.AddDbContext<AppDbContext>(opt =>
@@ -26,51 +73,78 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(opt =>
     opt.Password.RequiredLength = 8;
     opt.Password.RequireNonAlphanumeric = false;
     opt.SignIn.RequireConfirmedEmail = false;
-}).AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<AppDbContext>()
-    .AddSignInManager()
-    .AddDefaultTokenProviders();
+})
+.AddEntityFrameworkStores<AppDbContext>()
+.AddDefaultTokenProviders();
 
-
-// Dependency Injection
-builder.Services.AddScoped<IVideoService, VideoService>();
-builder.Services.AddScoped<ITextDetectionService, TextDetectionService>();
-builder.Services.AddScoped<IVideoRepository, VideoRepository>();
-builder.Services.AddScoped<ITokenService, TokenService>();
-
-// Add services to the container.
-builder.Services.AddControllers();
-
-// AuthN/Z (.NET 8 Identity + JwtBearer tokens)
+// JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.Authority = "https://login.microsoftonline.com/<TENANT_ID>/v2.0"; // falls Azure AD
-        options.TokenValidationParameters = new TokenValidationParameters
+  .AddJwtBearer(o =>
+  {
+      var secret = JwtKeyHelper.GetSecretBytes(builder.Configuration);
+      o.TokenValidationParameters = new TokenValidationParameters
+      {
+          ValidateIssuer = true,
+          ValidateAudience = true,
+          ValidateIssuerSigningKey = true,
+          ValidateLifetime = true,
+          ValidIssuer = builder.Configuration["Jwt:Issuer"],
+          ValidAudience = builder.Configuration["Jwt:Audience"],
+          IssuerSigningKey = new SymmetricSecurityKey(secret),
+          ClockSkew = TimeSpan.FromSeconds(30)
+      };
+
+       o.Events = new JwtBearerEvents
         {
-            ValidAudience = "<DEINE_API_CLIENT_ID_oder_APP_ID_URI>",
-            ValidateIssuer = true
-        };
-        // Für bessere Fehlermeldungen:
-        options.IncludeErrorDetails = true;
-        options.Events = new JwtBearerEvents
-        {
+            OnMessageReceived = ctx =>
+            {
+                var auth = ctx.Request.Headers.Authorization.ToString();
+                var log = ctx.HttpContext.RequestServices.GetRequiredService<ILoggerFactory>().CreateLogger("JWT");
+                log.LogInformation("Authorization header present? {has}", !string.IsNullOrEmpty(auth));
+                // اگر از کوکی استفاده می‌کنی
+                if (string.IsNullOrEmpty(ctx.Token) && ctx.Request.Cookies.TryGetValue("access_token", out var t))
+                            ctx.Token = t;
+                        return Task.CompletedTask;
+            },
+            OnAuthenticationFailed = ctx =>
+            {
+                ctx.HttpContext.RequestServices.GetRequiredService<ILoggerFactory>()
+                   .CreateLogger("JWT")
+                   .LogError(ctx.Exception, "JWT auth failed"); 
+                return Task.CompletedTask;
+            },
             OnChallenge = ctx =>
             {
-                // zeigt "error" und "error_description" im WWW-Authenticate
-                ctx.HandleResponse();
-                ctx.Response.StatusCode = 401;
-                ctx.Response.Headers.Append("WWW-Authenticate",
-                    $"Bearer error=\"invalid_token\", error_description=\"{ctx.ErrorDescription}\"");
+                ctx.HttpContext.RequestServices.GetRequiredService<ILoggerFactory>()
+                   .CreateLogger("JWT")
+                   .LogWarning("JWT challenge. Error:{Error} Desc:{Desc}", ctx.Error, ctx.ErrorDescription);
+                return Task.CompletedTask;
+            },
+            OnTokenValidated = ctx =>
+            {
+                var sub = ctx.Principal?.FindFirst(ClaimTypes.NameIdentifier)?.Value
+                          ?? ctx.Principal?.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
+                ctx.HttpContext.RequestServices.GetRequiredService<ILoggerFactory>()
+                   .CreateLogger("JWT").LogInformation("JWT token validated for {sub}", sub ?? "(null)");
                 return Task.CompletedTask;
             }
         };
+  });
 
-    });
 
 builder.Services.AddAuthorization();
 
-// Rate limiting 
+//CORS
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("default", p => p
+        .AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowCredentials()
+        .SetIsOriginAllowed(_ => true));
+});
+
+// Rate Limiter 
 builder.Services.AddRateLimiter(opt =>
 {
     opt.AddFixedWindowLimiter("auth", o =>
@@ -81,21 +155,16 @@ builder.Services.AddRateLimiter(opt =>
     });
 });
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddControllers();
-builder.Services.AddCors(opt =>
-{
-    opt.AddPolicy("default", p => p
-        .AllowAnyHeader()
-        .AllowAnyMethod()
-        .AllowCredentials()
-        .SetIsOriginAllowed(_ => true));
-});
+// DI
+builder.Services.AddScoped<IVideoService, VideoService>();
+builder.Services.AddScoped<ITextDetectionService, TextDetectionService>();
+builder.Services.AddScoped<IVideoRepository, VideoRepository>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -104,9 +173,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization(); 
-app.UseAuthentication();
+app.UseCors("default");
+app.UseRateLimiter();
 
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

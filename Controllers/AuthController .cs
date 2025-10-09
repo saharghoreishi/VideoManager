@@ -24,7 +24,7 @@ namespace VideoManager.Api.Controllers
             var user = new ApplicationUser { UserName = dto.Email, Email = dto.Email, EmailConfirmed = true };
             var result = await _um.CreateAsync(user, dto.Password);
             if (!result.Succeeded) return BadRequest(result.Errors);
-            TokenPair pair = await _tokens.CreateAsync(user);
+            var pair = await _tokens.CreateAsync(user);
             return Ok(pair);
         }
 
@@ -59,14 +59,11 @@ namespace VideoManager.Api.Controllers
             return pair is null ? Unauthorized() : Ok(pair);
         }
 
-
         [HttpPost("logout")]
         public async Task<IActionResult> Logout([FromBody] string refreshToken)
         {
             await _tokens.RevokeAsync(refreshToken);
             return Ok();
         }
-
-
     }
 }
