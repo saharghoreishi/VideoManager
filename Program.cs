@@ -101,7 +101,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 var auth = ctx.Request.Headers.Authorization.ToString();
                 var log = ctx.HttpContext.RequestServices.GetRequiredService<ILoggerFactory>().CreateLogger("JWT");
                 log.LogInformation("Authorization header present? {has}", !string.IsNullOrEmpty(auth));
-                // اگر از کوکی استفاده می‌کنی
+
                 if (string.IsNullOrEmpty(ctx.Token) && ctx.Request.Cookies.TryGetValue("access_token", out var t))
                             ctx.Token = t;
                         return Task.CompletedTask;
