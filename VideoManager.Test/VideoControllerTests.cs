@@ -9,6 +9,7 @@ using VideoManager.Api.Controllers;
 using VideoManager.Api.DTOs;
 using VideoManager.Api.Models;
 using VideoManager.Api.Services;
+using Xunit;
 
 
 namespace VideoManager.Test;

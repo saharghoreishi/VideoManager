@@ -8,6 +8,7 @@ using Moq;
 using VideoManager.Api.Auth;
 using VideoManager.Api.Controllers;
 using VideoManager.Api.Services;
+using Xunit;
 
 
 namespace VideoManager.Test;
