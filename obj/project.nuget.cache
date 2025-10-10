@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RTAZ93zxJy4=",
+  "dgSpecHash": "fo4QhMRsLDc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\artecSample\\VideoManager.Api.csproj",
+  "projectFilePath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager.Api\\VideoManager.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo test\\.nuget\\packages\\ffmpegcore\\5.2.0\\ffmpegcore.5.2.0.nupkg.sha512",
     "C:\\Users\\lenovo test\\.nuget\\packages\\ffmpegcore.extensions.system.drawing.common\\5.0.2\\ffmpegcore.extensions.system.drawing.common.5.0.2.nupkg.sha512",
