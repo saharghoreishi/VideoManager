@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoManager.Test", "VideoManager.Test\VideoManager.Test.csproj", "{49877870-607D-AB74-EC87-144E5BE39343}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoManager.Api", "VideoManager.Api.csproj", "{38A5399E-814D-81D3-EB3F-D507A2414EF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoManager.Test", "VideoManager.Test\VideoManager.Test.csproj", "{49877870-607D-AB74-EC87-144E5BE39343}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{49877870-607D-AB74-EC87-144E5BE39343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{49877870-607D-AB74-EC87-144E5BE39343}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{49877870-607D-AB74-EC87-144E5BE39343}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{49877870-607D-AB74-EC87-144E5BE39343}.Release|Any CPU.Build.0 = Release|Any CPU
 		{38A5399E-814D-81D3-EB3F-D507A2414EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{38A5399E-814D-81D3-EB3F-D507A2414EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A5399E-814D-81D3-EB3F-D507A2414EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A5399E-814D-81D3-EB3F-D507A2414EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49877870-607D-AB74-EC87-144E5BE39343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49877870-607D-AB74-EC87-144E5BE39343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49877870-607D-AB74-EC87-144E5BE39343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49877870-607D-AB74-EC87-144E5BE39343}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
