@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VideoManager.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15f31eaf8020ae4607e98fc50850f12f6e8992e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d36a020a6b18a869ff5f23446fdc227f61c0c42")]
 [assembly: System.Reflection.AssemblyProductAttribute("VideoManager.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VideoManager.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
