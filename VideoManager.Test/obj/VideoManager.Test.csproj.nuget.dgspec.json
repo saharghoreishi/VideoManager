@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\VideoManager.Test.csproj": {}
+    "C:\\Users\\lenovo test\\Source\\Repos\\VideoManager\\VideoManager.Test\\VideoManager.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\VideoManager.Api.csproj": {
+    "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\VideoManager.Api.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api.csproj",
         "projectName": "VideoManager.Api",
-        "projectPath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\VideoManager.Api.csproj",
+        "projectPath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api.csproj",
         "packagesPath": "C:\\Users\\lenovo test\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\obj\\",
+        "outputPath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -119,14 +119,14 @@
         }
       }
     },
-    "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\VideoManager.Test.csproj": {
+    "C:\\Users\\lenovo test\\Source\\Repos\\VideoManager\\VideoManager.Test\\VideoManager.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\VideoManager.Test.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo test\\Source\\Repos\\VideoManager\\VideoManager.Test\\VideoManager.Test.csproj",
         "projectName": "VideoManager.Test",
-        "projectPath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\VideoManager.Test.csproj",
+        "projectPath": "C:\\Users\\lenovo test\\Source\\Repos\\VideoManager\\VideoManager.Test\\VideoManager.Test.csproj",
         "packagesPath": "C:\\Users\\lenovo test\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\obj\\",
+        "outputPath": "C:\\Users\\lenovo test\\Source\\Repos\\VideoManager\\VideoManager.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -148,8 +148,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\VideoManager.Api.csproj": {
-                "projectPath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\VideoManager.Api.csproj"
+              "C:\\Users\\lenovo test\\Source\\Repos\\artecSample\\VideoManager\\VideoManager.Api.csproj": {
+                "projectPath": "C:\\Users\\lenovo test\\Source\\Repos\\artecSample\\VideoManager\\VideoManager.Api.csproj"
               }
             }
           }
