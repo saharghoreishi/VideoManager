@@ -1,0 +1,25 @@
+@host = https://localhost:44350
+
+### Register a new user (Bearer tokens, no cookies)
+POST {{host}}/api/auth/register?useCookies=false
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "P@ssw0rd!",
+  "confirmPassword": "P@ssw0rd!"
+}
+
+### Login (get access_token)
+POST {{host}}/api/auth/login?useCookies=false
+Content-Type: application/x-www-form-urlencoded
+
+email=user@example.com&password=P@ssw0rd!&rememberMe=false
+
+### Copy access_token from login response here:
+@access_token = REPLACE_ME
+
+### Call a protected endpoint
+GET {{host}}/api/videos
+Accept: application/json
+Authorization: Bearer {{access_token}}

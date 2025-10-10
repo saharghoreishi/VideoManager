@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("VideoManager.Api")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("VideoManager.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+762e1d07f9b7a876197c241aa08167ceda59c7fc")]
-[assembly: System.Reflection.AssemblyProductAttribute("VideoManager.Api")]
-[assembly: System.Reflection.AssemblyTitleAttribute("VideoManager.Api")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4eed244bce7a2ec57e032640dedabde8ed27ee3")]
+[assembly: System.Reflection.AssemblyProductAttribute("VideoManager.Test")]
+[assembly: System.Reflection.AssemblyTitleAttribute("VideoManager.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.
