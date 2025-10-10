@@ -14,12 +14,16 @@
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Video>().HasIndex(v => v.Title);
-            modelBuilder.Entity<RefreshToken>(e =>
+            modelBuilder.Entity<RefreshToken>(b =>
             {
-                e.Property(x => x.Token).IsRequired();
-                e.HasIndex(x => x.Token).IsUnique();
-                e.Property(x => x.JwtId).IsRequired(false); 
+                b.HasKey(x => x.Id);
+                b.Property(x => x.UserId).IsRequired();
+                b.Property(x => x.Token).IsRequired();
+                b.Property(x => x.JwtId).IsRequired();
+                b.Property(x => x.ExpiresAt).IsRequired();
+                b.HasIndex(x => x.Token).IsUnique();
             });
+
             base.OnModelCreating(modelBuilder);
         }
     }

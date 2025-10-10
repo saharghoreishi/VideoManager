@@ -2,7 +2,7 @@
 {
     public class RefreshToken
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Token { get; set; } = default!;
         public string? JwtId { get; set; }  // ← nullable
         public DateTime ExpiresAt { get; set; }

@@ -1,10 +1,11 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using VideoManager.Api.DTOs;
 using VideoManager.Api.Services;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 namespace VideoManager.Api.Controllers
 {
+   
     [ApiController]
     [Route("api/[controller]")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
