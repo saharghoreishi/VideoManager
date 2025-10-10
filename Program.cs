@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +9,7 @@ using System.Security.Claims;
 using VideoManager.Api.Auth;
 using VideoManager.Api.Data;
 using VideoManager.Api.Helpers;
+using VideoManager.Api.Middleware;
 using VideoManager.Api.Repositories;
 using VideoManager.Api.Services;
 
@@ -76,6 +76,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(opt =>
 })
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();
+
 
 // JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -163,6 +164,18 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 
 
 var app = builder.Build();
+
+// Dev Exception Page
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage(); 
+}
+
+// Detailed errors for EF Core
+if (app.Environment.IsDevelopment()) app.UseDeveloperExceptionPage();
+
+// Custom Middleware
+app.UseMiddleware<ErrorHandlingMiddleware>();
 
 // Pipeline
 if (app.Environment.IsDevelopment())

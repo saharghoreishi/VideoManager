@@ -2,7 +2,7 @@
 using System.Text.Json;
 
 
-namespace VideoManager.Middleware
+namespace VideoManager.Api.Middleware
 {
     public class ErrorHandlingMiddleware(RequestDelegate next, ILogger<ErrorHandlingMiddleware> logger)
     {
