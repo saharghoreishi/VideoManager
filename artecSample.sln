@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoManager.Test", "VideoManager.Test\VideoManager.Test.csproj", "{49877870-607D-AB74-EC87-144E5BE39343}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoManager.Api", "VideoManager.Api\VideoManager.Api.csproj", "{A8F491B1-AB58-28E1-D9E2-E7F869CE7E53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoManager.Api", "..\artecSample\VideoManager\VideoManager.Api\VideoManager.Api.csproj", "{FD9107F3-93DC-67C9-F0E4-E9CDA1DADA86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{49877870-607D-AB74-EC87-144E5BE39343}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49877870-607D-AB74-EC87-144E5BE39343}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49877870-607D-AB74-EC87-144E5BE39343}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A8F491B1-AB58-28E1-D9E2-E7F869CE7E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8F491B1-AB58-28E1-D9E2-E7F869CE7E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8F491B1-AB58-28E1-D9E2-E7F869CE7E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8F491B1-AB58-28E1-D9E2-E7F869CE7E53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD9107F3-93DC-67C9-F0E4-E9CDA1DADA86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9107F3-93DC-67C9-F0E4-E9CDA1DADA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9107F3-93DC-67C9-F0E4-E9CDA1DADA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9107F3-93DC-67C9-F0E4-E9CDA1DADA86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
