@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace VideoManager.Api.Models
+namespace VideoManager.Api.Domain.Models
 {
     public class Video
     {

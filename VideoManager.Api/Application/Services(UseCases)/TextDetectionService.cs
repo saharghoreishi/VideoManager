@@ -4,8 +4,9 @@ using SixLabors.ImageSharp.Processing;
 using FFMpegCore;
 using Tesseract;
 using System.Globalization;
+using VideoManager.Api.Application.Interfaces;
 
-namespace VideoManager.Api.Services
+namespace VideoManager.Api.Application.Services
 {
     /// <summary>
     /// TextDetectionService

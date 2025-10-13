@@ -12,7 +12,7 @@ Content-Type: application/json
 
 ### Login (get access_token)
 POST {{host}}/api/auth/login?useCookies=false
-Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
 
 email=user@example.com&password=P@ssw0rd!&rememberMe=false
 

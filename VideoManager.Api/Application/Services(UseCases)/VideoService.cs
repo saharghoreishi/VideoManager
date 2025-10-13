@@ -1,9 +1,10 @@
-﻿using VideoManager.Api.Common;
+﻿using VideoManager.Api.Application.Interfaces;
+using VideoManager.Api.Domain.Common;
+using VideoManager.Api.Domain.Models;
 using VideoManager.Api.DTOs;
-using VideoManager.Api.Models;
-using VideoManager.Api.Repositories;
+using VideoManager.Api.Infrastructure.Repositories;
 
-namespace VideoManager.Api.Services
+namespace VideoManager.Api.Application.Services
 {
     public class VideoService(IVideoRepository repo) : IVideoService
     {

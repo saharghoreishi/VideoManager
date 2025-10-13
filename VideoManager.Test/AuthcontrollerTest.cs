@@ -5,9 +5,9 @@ using FluentAssertions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using VideoManager.Api.Auth;
+using VideoManager.Api.Application.Interfaces;
 using VideoManager.Api.Controllers;
-using VideoManager.Api.Services;
+using VideoManager.Api.Domain.Auth;
 using Xunit;
 
 

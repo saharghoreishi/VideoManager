@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
-using VideoManager.Api.Auth;
-using VideoManager.Api.Services;
+using VideoManager.Api.Application.Interfaces;
+using VideoManager.Api.Domain.Auth;
 namespace VideoManager.Api.Controllers
 {
     [ApiController]

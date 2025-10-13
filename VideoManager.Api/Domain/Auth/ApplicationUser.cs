@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace VideoManager.Api.Auth
+namespace VideoManager.Api.Domain.Auth
 {
     public class ApplicationUser : IdentityUser
     {

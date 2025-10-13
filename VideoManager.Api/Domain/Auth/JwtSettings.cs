@@ -1,4 +1,4 @@
-﻿namespace VideoManager.Api.Auth
+﻿namespace VideoManager.Api.Domain.Auth
 {
     public sealed class JwtSettings
     {

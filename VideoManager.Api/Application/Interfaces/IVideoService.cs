@@ -1,8 +1,8 @@
-﻿using VideoManager.Api.Common;
+﻿using VideoManager.Api.Domain.Common;
+using VideoManager.Api.Domain.Models;
 using VideoManager.Api.DTOs;
-using VideoManager.Api.Models;
 
-namespace VideoManager.Api.Services
+namespace VideoManager.Api.Application.Interfaces
 {
     public interface IVideoService
     {

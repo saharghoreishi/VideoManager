@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using VideoManager.Api.Application.Interfaces;
 using VideoManager.Api.DTOs;
-using VideoManager.Api.Services;
 namespace VideoManager.Api.Controllers
 {
    

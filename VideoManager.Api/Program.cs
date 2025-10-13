@@ -6,12 +6,13 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using VideoManager.Api.Auth;
-using VideoManager.Api.Data;
-using VideoManager.Api.Helpers;
+using VideoManager.Api.Application.Interfaces;
+using VideoManager.Api.Application.Services;
+using VideoManager.Api.Domain.Auth;
+using VideoManager.Api.Domain.Helpers;
+using VideoManager.Api.Infrastructure.Data;
+using VideoManager.Api.Infrastructure.Repositories;
 using VideoManager.Api.Middleware;
-using VideoManager.Api.Repositories;
-using VideoManager.Api.Services;
 
 namespace VideoManager.Api
 {

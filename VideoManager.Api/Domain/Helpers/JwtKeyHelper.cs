@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace VideoManager.Api.Helpers
+namespace VideoManager.Api.Domain.Helpers
 {
     public static class JwtKeyHelper
     {

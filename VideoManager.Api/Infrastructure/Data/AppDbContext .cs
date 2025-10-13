@@ -1,10 +1,10 @@
-﻿namespace VideoManager.Api.Data
+﻿namespace VideoManager.Api.Infrastructure.Data
 {
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
-    using VideoManager.Api.Auth;
-    using VideoManager.Api.Models;
+    using VideoManager.Api.Domain.Auth;
+    using VideoManager.Api.Domain.Models;
 
     public class AppDbContext(DbContextOptions<AppDbContext> options)
             : IdentityDbContext<ApplicationUser, IdentityRole, string>(options)  

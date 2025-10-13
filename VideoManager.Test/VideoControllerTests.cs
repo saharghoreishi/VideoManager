@@ -4,11 +4,11 @@
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using VideoManager.Api.Common;
+using VideoManager.Api.Application.Interfaces;
 using VideoManager.Api.Controllers;
+using VideoManager.Api.Domain.Common;
+using VideoManager.Api.Domain.Models;
 using VideoManager.Api.DTOs;
-using VideoManager.Api.Models;
-using VideoManager.Api.Services;
 using Xunit;
 
 

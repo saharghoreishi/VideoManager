@@ -5,10 +5,12 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using VideoManager.Api.Auth;
-using VideoManager.Api.Data;
+using VideoManager.Api.Application.Interfaces;
+using VideoManager.Api.Domain.Auth;
+using VideoManager.Api.Domain.Models;
+using VideoManager.Api.Infrastructure.Data;
 
-namespace VideoManager.Api.Services
+namespace VideoManager.Api.Application.Services
 {
     public class TokenService(AppDbContext db, UserManager<ApplicationUser> um, IConfiguration cfg) : ITokenService
     {

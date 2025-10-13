@@ -1,4 +1,4 @@
-﻿namespace VideoManager.Api.Common
+﻿namespace VideoManager.Api.Domain.Common
 {
     public class PagedResult<T>
     {

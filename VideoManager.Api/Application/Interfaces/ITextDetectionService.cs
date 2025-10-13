@@ -1,4 +1,4 @@
-﻿namespace VideoManager.Api.Services
+﻿namespace VideoManager.Api.Application.Interfaces
 {
     public interface ITextDetectionService
     {

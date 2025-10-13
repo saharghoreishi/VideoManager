@@ -1,5 +1,5 @@
-﻿using VideoManager.Api.Auth;
-namespace VideoManager.Api.Services
+﻿using VideoManager.Api.Domain.Auth;
+namespace VideoManager.Api.Application.Interfaces
 {
     public record TokenPair(string AccessToken, string RefreshToken);
 
