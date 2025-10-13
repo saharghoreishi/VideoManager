@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\VideoManager.Test.csproj": {}
   },
   "projects": {
@@ -13,19 +12,6 @@
         "projectPath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\VideoManager.Api.csproj",
         "packagesPath": "C:\\Users\\lenovo test\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\obj\\",
-=======
-    "C:\\Users\\lenovo test\\Source\\Repos\\sss\\VideoManager.Test\\VideoManager.Test.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\lenovo test\\Source\\Repos\\sss\\VideoManager.Test\\VideoManager.Test.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo test\\Source\\Repos\\sss\\VideoManager.Test\\VideoManager.Test.csproj",
-        "projectName": "VideoManager.Test",
-        "projectPath": "C:\\Users\\lenovo test\\Source\\Repos\\sss\\VideoManager.Test\\VideoManager.Test.csproj",
-        "packagesPath": "C:\\Users\\lenovo test\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo test\\Source\\Repos\\sss\\VideoManager.Test\\obj\\",
->>>>>>> ce9ebce55095ca1b1d792b6e13a68458fbbe8042
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,7 +51,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-<<<<<<< HEAD
             "FFMpegCore.Extensions.System.Drawing.Common": {
               "target": "Package",
               "version": "[5.0.2, )"
@@ -185,8 +170,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-=======
->>>>>>> ce9ebce55095ca1b1d792b6e13a68458fbbe8042
             "FluentAssertions": {
               "target": "Package",
               "version": "[8.7.1, )"

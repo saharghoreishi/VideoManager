@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49877870-607D-AB74-EC87-144E5BE39343}|VideoManager.Test\\VideoManager.Test.csproj|c:\\users\\lenovo test\\source\\repos\\artecsample\\videomanager\\videomanager.test\\videomanager.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{49877870-607D-AB74-EC87-144E5BE39343}|VideoManager.Test\\VideoManager.Test.csproj|solutionrelative:videomanager.test\\videomanager.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A8F491B1-AB58-28E1-D9E2-E7F869CE7E53}|VideoManager.Api\\VideoManager.Api.csproj|c:\\users\\lenovo test\\source\\repos\\artecsample\\videomanager\\videomanager.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A8F491B1-AB58-28E1-D9E2-E7F869CE7E53}|VideoManager.Api\\VideoManager.Api.csproj|solutionrelative:videomanager.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8F491B1-AB58-28E1-D9E2-E7F869CE7E53}|VideoManager.Api\\VideoManager.Api.csproj|c:\\users\\lenovo test\\source\\repos\\artecsample\\videomanager\\videomanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8F491B1-AB58-28E1-D9E2-E7F869CE7E53}|VideoManager.Api\\VideoManager.Api.csproj|solutionrelative:videomanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49877870-607D-AB74-EC87-144E5BE39343}|VideoManager.Test\\VideoManager.Test.csproj|c:\\users\\lenovo test\\source\\repos\\artecsample\\videomanager\\videomanager.test\\authcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49877870-607D-AB74-EC87-144E5BE39343}|VideoManager.Test\\VideoManager.Test.csproj|solutionrelative:videomanager.test\\authcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo test\\source\\repos\\VideoManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -31,12 +27,8 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo test\\source\\repos\\VideoManager\\obj\\Debug\\net8.0\\VideoManager.Api.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49877870-607D-AB74-EC87-144E5BE39343}|VideoManager.Test\\VideoManager.Test.csproj|c:\\users\\lenovo test\\source\\repos\\artecsample\\videomanager\\videomanager.test\\videocontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49877870-607D-AB74-EC87-144E5BE39343}|VideoManager.Test\\VideoManager.Test.csproj|solutionrelative:videomanager.test\\videocontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49877870-607D-AB74-EC87-144E5BE39343}|VideoManager.Test\\VideoManager.Test.csproj|c:\\users\\lenovo test\\source\\repos\\artecsample\\videomanager\\videomanager.test\\authcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49877870-607D-AB74-EC87-144E5BE39343}|VideoManager.Test\\VideoManager.Test.csproj|solutionrelative:videomanager.test\\authcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8F491B1-AB58-28E1-D9E2-E7F869CE7E53}|VideoManager.Api\\VideoManager.Api.csproj|c:\\users\\lenovo test\\source\\repos\\artecsample\\videomanager\\videomanager.api\\videomanager.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A8F491B1-AB58-28E1-D9E2-E7F869CE7E53}|VideoManager.Api\\VideoManager.Api.csproj|solutionrelative:videomanager.api\\videomanager.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,56 +54,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VideoManager.Test.AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfo.cs",
-              "RelativeToolTip": "VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T14:24:59.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VideoControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\VideoControllerTests.cs",
-              "RelativeDocumentMoniker": "VideoManager.Test\\VideoControllerTests.cs",
-              "ToolTip": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\VideoControllerTests.cs",
-              "RelativeToolTip": "VideoManager.Test\\VideoControllerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T13:43:55.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\Program.cs",
-              "RelativeDocumentMoniker": "VideoManager.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\Program.cs",
-              "RelativeToolTip": "VideoManager.Api\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAUwA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T13:43:51.817Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VideoManager.Test.csproj",
-              "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\VideoManager.Test.csproj",
-              "RelativeDocumentMoniker": "VideoManager.Test\\VideoManager.Test.csproj",
-              "ToolTip": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\VideoManager.Test.csproj",
-              "RelativeToolTip": "VideoManager.Test\\VideoManager.Test.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-10T13:43:06.724Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "VideoManager.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\appsettings.json",
+              "RelativeToolTip": "VideoManager.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-13T06:49:17.917Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
+              "Title": "VideoManager.http",
+              "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\VideoManager.http",
+              "RelativeDocumentMoniker": "VideoManager.Api\\VideoManager.http",
+              "ToolTip": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Api\\VideoManager.http",
+              "RelativeToolTip": "VideoManager.Api\\VideoManager.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-13T06:48:13.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AuthcontrollerTest.cs",
               "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\VideoManager.Test\\AuthcontrollerTest.cs",
               "RelativeDocumentMoniker": "VideoManager.Test\\AuthcontrollerTest.cs",
@@ -119,23 +88,24 @@
               "RelativeToolTip": "VideoManager.Test\\AuthcontrollerTest.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAYwGoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T13:42:56.532Z"
+              "WhenOpened": "2025-10-10T13:42:56.532Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "RelativeDocumentMoniker": "obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "ToolTip": "C:\\Users\\lenovo test\\source\\repos\\artecSample\\VideoManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "RelativeToolTip": "obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T13:41:55.928Z"
+              "WhenOpened": "2025-10-10T13:41:55.928Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "VideoManager.Test.AssemblyInfoInputs.cache",
               "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\VideoManager\\VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfoInputs.cache",
               "RelativeDocumentMoniker": "..\\..\\VideoManager\\VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfoInputs.cache",
@@ -143,11 +113,12 @@
               "RelativeToolTip": "..\\..\\VideoManager\\VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfoInputs.cache",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002368|",
-              "WhenOpened": "2025-10-10T13:32:05.177Z"
+              "WhenOpened": "2025-10-10T13:32:05.177Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "VideoManager.Test.AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\VideoManager\\VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfo.cs",
               "RelativeDocumentMoniker": "..\\..\\VideoManager\\VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfo.cs",
@@ -155,11 +126,12 @@
               "RelativeToolTip": "..\\..\\VideoManager\\VideoManager.Test\\obj\\Debug\\net8.0\\VideoManager.Test.AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T13:32:00.876Z"
+              "WhenOpened": "2025-10-10T13:32:00.876Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "VideoManager.Api.AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\VideoManager\\obj\\Debug\\net8.0\\VideoManager.Api.AssemblyInfo.cs",
               "RelativeDocumentMoniker": "..\\..\\VideoManager\\obj\\Debug\\net8.0\\VideoManager.Api.AssemblyInfo.cs",
@@ -167,11 +139,12 @@
               "RelativeToolTip": "..\\..\\VideoManager\\obj\\Debug\\net8.0\\VideoManager.Api.AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T13:14:37.449Z"
+              "WhenOpened": "2025-10-10T13:14:37.449Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "DocumentMoniker": "C:\\Users\\lenovo test\\source\\repos\\VideoManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "RelativeDocumentMoniker": "..\\..\\VideoManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
@@ -179,7 +152,8 @@
               "RelativeToolTip": "..\\..\\VideoManager\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T13:13:08.342Z"
+              "WhenOpened": "2025-10-10T13:13:08.342Z",
+              "EditorCaption": ""
             }
           ]
         }
